@@ -15,9 +15,6 @@ const Hero = () => {
             Learn how to protect yourself from phishing attacks and malicious links. 
             A guide for Silverstone UTC students on digital safety.
           </p>
-          <p className="text-md text-gray-600 mb-8">
-            The OFFICIAL website for Silverstone UTC is <strong>utc-silverstone.co.uk</strong>
-          </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-3 flex items-center gap-2">
               Learn How <ArrowRight className="h-4 w-4" />
@@ -25,6 +22,19 @@ const Hero = () => {
             <Button variant="outline" className="px-6 py-3">
               View Examples
             </Button>
+          </div>
+          <p className="text-md text-gray-600 mb-8">
+            The OFFICIAL website for Silverstone UTC is <strong>utc-silverstone.co.uk</strong>
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="https://utc-silverstone.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-primary hover:bg-primary/90 text-white px-6 py-3 flex items-center gap-2 rounded"
+            >
+              Take Me There <ArrowRight className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </div>
