@@ -16,7 +16,7 @@ const Hero = () => {
             A guide for Silverstone UTC students on digital safety.
           </p>
           <p className="text-md text-gray-600 mb-8">
-            Remember: The official website for Silverstone UTC is <strong>utc-silverstone.co.uk</strong>
+            The OFFICIAL website for Silverstone UTC is <strong>utc-silverstone.co.uk</strong>
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-3 flex items-center gap-2">
