@@ -2,42 +2,46 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-blue-100 py-16 md:py-24">
+    <div className="bg-gradient-to-br from-blue-50 to-blue-100 py-16 md:py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Verify Before You Click
           </h1>
-          <p className="text-xl text-gray-700 mb-8">
+          <p className="text-xl text-gray-700 mb-10">
             Learn how to protect yourself from phishing attacks and malicious links. 
             A guide for Silverstone UTC students on digital safety.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-3 flex items-center gap-2">
-              Learn How <ArrowRight className="h-4 w-4" />
+          
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+            <Button asChild className="bg-primary hover:bg-primary/90 text-white px-6 py-3 flex items-center gap-2">
+              <Link to="/resources">
+                Learn How <ArrowRight className="h-4 w-4" />
+              </Link>
             </Button>
-            <Button variant="outline" className="px-6 py-3">
-              View Examples
+            <Button asChild variant="outline" className="px-6 py-3 bg-white">
+              <Link to="/resources#examples">View Examples</Link>
             </Button>
           </div>
-          <p className="text-md text-gray-600 mb-8">
+          
+          <p className="text-md text-gray-600 mt-8">
             The OFFICIAL website for Silverstone UTC is <strong>utc-silverstone.co.uk</strong>
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="https://utc-silverstone.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary hover:bg-primary/90 text-white px-6 py-3 flex items-center gap-2 rounded"
-            >
-              Take Me There <ArrowRight className="h-4 w-4" />
-            </a>
+          
+          <div className="mt-6">
+            <Button asChild variant="outline" className="bg-primary text-white hover:bg-primary/90 px-6 py-3 flex items-center gap-2">
+              <a href="https://utc-silverstone.co.uk" target="_blank" rel="noopener noreferrer">
+                Take Me There <ArrowRight className="h-4 w-4" />
+              </a>
+            </Button>
           </div>
         </div>
       </div>
+      
       <div className="container mx-auto px-4 mt-16">
         <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
           <div className="grid md:grid-cols-3 gap-8">
