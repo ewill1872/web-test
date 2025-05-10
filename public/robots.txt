@@ -1,0 +1,6 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://link-safety.utc-silverstone.co.uk/sitemap.xml
+
